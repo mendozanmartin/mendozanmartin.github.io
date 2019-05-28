@@ -83,6 +83,10 @@ p {
   height: 70vh;
   background-color: #fff;
   border: solid;
+  background-image: url("Jackstone.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .aboutPage {
   height: 100vh;
