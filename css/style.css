@@ -12,6 +12,9 @@ h2 {
 p {
   font-size: 20px;
 }
+hr {
+  color: black;
+}
 .row {
   margin: 0px;
 }
@@ -81,7 +84,7 @@ p {
 .slideshow {
   width: inherit;
   height: 70vh;
-  background-color: #a8d0e6;
+  background-color: #84ceeb;
   border: solid;
   /* background-image: url("Jackstone.gif");
   background-size: cover;
@@ -120,7 +123,7 @@ p {
   cursor: pointer;
   height: 250px;
   object-fit: cover;
-  
+  box-shadow: 0 6px 6px rgba(0,0,0,0.25)
 }
 
 .middle {
@@ -132,11 +135,13 @@ p {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
 .container:hover .image {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transform: scale(1.03);
+  opacity: 0.2;
 }
 
 .container:hover .middle {
@@ -167,4 +172,9 @@ p {
   margin: auto;
   margin-top: 10px;
   width: 280px;
+}
+.projectTitle {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 20px;
 }
