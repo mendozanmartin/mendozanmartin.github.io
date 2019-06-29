@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
-
+  background-color: #ececec;
 }
 h1 {
   font-size: 50px;
@@ -76,12 +76,13 @@ p {
   border-radius: 50%;
   border-style: solid;
   border-width: 4px 15px 15px 4px;
-  border-color: #d3d3d3;
+  border-color: #8fc1e3;
+  
 }
 .slideshow {
   width: inherit;
   height: 70vh;
-  background-color: rgb(168, 245, 255);
+  background-color: #a8d0e6;
   border: solid;
   /* background-image: url("Jackstone.gif");
   background-size: cover;
@@ -95,6 +96,11 @@ p {
 }
 .aboutContent {
   margin-top: 50px;
+}
+
+.aboutText {
+  background-color: #8fc1e3;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .projectsPage {
@@ -113,8 +119,7 @@ p {
   transition: .5s ease;
   backface-visibility: hidden;
   cursor: pointer;
-  height: 300px;
-  width: 450px;
+  height: 250px;
   object-fit: cover;
   
 }
@@ -131,8 +136,8 @@ p {
 }
 
 .container:hover .image {
-  opacity: 0.3;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.03);
 }
 
 .container:hover .middle {
@@ -148,10 +153,19 @@ p {
 }
 
 .footer {
-  position: absolute;
+  padding-top: 5vh;
+  margin-top: 15vh;
   width: 100%;
-  color: white;
+  color: #ececec;
   text-align: center;
-  background-color: #777777;
-  bottom: 0;
+  background-color: #84ceeb;
+  overflow: hidden;
+}
+.footerTitle {
+  border-width: thick;
+  border-style: solid;
+  color: #ececec;
+  margin: auto;
+  margin-top: 10px;
+  width: 280px;
 }
