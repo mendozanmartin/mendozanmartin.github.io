@@ -18,7 +18,7 @@ p {
 .navbar {
   margin-left: 10vw;
   margin-right: 10vw;
-  padding-top: 1vw;
+  padding-top: 1vh;
   color: black;
   padding-left: 0px;
   padding-right: 0px;
@@ -81,15 +81,15 @@ p {
 .slideshow {
   width: inherit;
   height: 70vh;
-  background-color: #fff;
+  background-color: rgb(168, 245, 255);
   border: solid;
-  background-image: url("Jackstone.gif");
+  /* background-image: url("Jackstone.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .aboutPage {
-  height: 100vh;
+  height: 70vh;
   margin-left: 10vw;
   margin-right: 10vw;
 }
