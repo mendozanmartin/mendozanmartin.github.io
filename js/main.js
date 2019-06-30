@@ -4,12 +4,13 @@ const canvasHeight = document.getElementById("drawingCanvas").offsetHeight;
 function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
-    myCanvas.mouseOver(drawAnimal);
+    jQuery.getJSON("./processing/data/bat.ndjson", function(json) {
+       console.log(json)
+    });
 }
 function mousePressed() {
     console.log(mouseX);
 }
-
-function drawAnimal() {
-    console.log(mouseX + " " + mouseY);
+function gotBear(drawing) {
+    console.log(drawing);
 }

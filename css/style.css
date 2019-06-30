@@ -84,12 +84,9 @@ hr {
 .drawingCanvas {
   width: inherit;
   height: 70vh;
-  background-color: #84ceeb;
+  background-color: #ccebff;
   border: solid;
-  /* background-image: url("Jackstone.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+
 }
 .aboutPage {
   margin-left: 10vw;
@@ -101,7 +98,7 @@ hr {
 }
 
 .aboutText {
-  background-color: #8fc1e3;
+  background-color: #ccebff;
   box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 }
 
