@@ -4,13 +4,15 @@ const canvasHeight = document.getElementById("drawingCanvas").offsetHeight;
 function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
-    jQuery.getJSON("./processing/data/bat.ndjson", function(json) {
-       console.log(json)
+
+    $.getJSON('./processing/data/bear.ndjson', function(data) {
+        console.log("success");
+        gotBear(data);
     });
+
 }
-function mousePressed() {
-    console.log(mouseX);
-}
-function gotBear(drawing) {
-    console.log(drawing);
+
+function gotBear(resData) {
+    var data = jQuery.parseJSON(JSON.stringify(resData));
+    console.log(data)
 }
