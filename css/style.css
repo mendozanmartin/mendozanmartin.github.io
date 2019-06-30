@@ -55,8 +55,7 @@ hr {
   background-origin: content-box;
     background-position: top;
   background-attachment: fixed;*/
-  height: 100vh;
-
+  margin-bottom: 100px;
 }
 
 .landingPage {
@@ -83,7 +82,7 @@ hr {
 }
 .drawingCanvas {
   width: inherit;
-  height: 70vh;
+  height: 550px;
   background-color: #ccebff;
   border: solid;
 
