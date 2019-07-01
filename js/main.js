@@ -9,6 +9,7 @@ let isDrawing = false;
 let xPos;
 let yPos;
 
+
 function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
@@ -54,7 +55,7 @@ function placeBear() {
     bear = undefined;
     prevx = undefined;
     prevy = undefined;
-    
+
     strokeIndex = 0;
     index = 0;
  
