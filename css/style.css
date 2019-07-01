@@ -182,6 +182,21 @@ hr {
   border-bottom-width: 1px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 1400px)  { /* smartphones, Android phones, landscape iPhone */ 
+  .navbar {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .landingPage {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .projectsPage {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+}
 
 @media screen and (max-width: 640px)  { /* smartphones, Android phones, landscape iPhone */ 
   h1 {
