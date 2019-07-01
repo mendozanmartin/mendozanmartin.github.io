@@ -58,8 +58,17 @@ function placeBear() {
 
     strokeIndex = 0;
     index = 0;
- 
-    var randomNum = parseInt((Math.random()* bearDrawing.length), 10);
-    gotBear(randomNum);    
+
+    var randomNum = parseInt((Math.random() * bearDrawing.length), 10);
+    gotBear(randomNum);
+}
+
+function nextPage(project) {
+    console.log(project)
+    switch (project) {
+        case "promptu":
+            window.location.href = './promptu'
+            break;
+    }
 }
 
