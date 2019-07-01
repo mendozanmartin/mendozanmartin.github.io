@@ -25,6 +25,7 @@ hr {
   color: black;
   padding-left: 0px;
   padding-right: 0px;
+  background: rgba(255, 255, 255, 0.75);
 }
 .title {
   display: flex;
@@ -90,6 +91,7 @@ hr {
   margin-top: 10px;
 }
 .aboutPage {
+  margin-top: 50px;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10vh;
@@ -165,7 +167,7 @@ hr {
   overflow: hidden;
 }
 .footerTitle {
-  border-width: thick;
+  border-width: 4px;
   border-style: solid;
   color: white;
   margin: auto;
