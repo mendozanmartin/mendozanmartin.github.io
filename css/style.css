@@ -91,6 +91,7 @@ hr {
 }
 
 .aboutText {
+  padding-top: 15px;
   background-color: #b3e4f7;
   box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 }
