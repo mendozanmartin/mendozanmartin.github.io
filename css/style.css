@@ -25,7 +25,7 @@ hr {
   color: black;
   padding-left: 0px;
   padding-right: 0px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.90);
 }
 .title {
   display: flex;
@@ -34,9 +34,11 @@ hr {
   padding-left: 5px;
   padding-right: 5px;
 }
-.nav-item {
-  margin: 1vw;
+.nav-link {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   font-weight: bold;
+  cursor: pointer;
 }
 .about-nav {
   animation-delay: 1.5s;
@@ -182,7 +184,7 @@ hr {
 
 @media screen and (max-width: 640px)  { /* smartphones, Android phones, landscape iPhone */ 
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   h2 {
     font-size: 35px;
@@ -191,10 +193,10 @@ hr {
     font-size: 25px;
   }
   p {
-    font-size: 20px;
+    font-size: 17px;
   }
   .aboutText {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .aboutPage {
     margin-left: 15px;
@@ -216,6 +218,7 @@ hr {
     margin-left: 15px;
     margin-right: 15px;  
   }
+
   .projectsPage {
     margin-left: 15px;
     margin-right: 15px;
@@ -226,5 +229,5 @@ hr {
   .prompt {
     margin: 0px;
   }
-  
+
 }
