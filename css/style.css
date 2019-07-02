@@ -4,7 +4,7 @@ body {
   background-color: white;
 }
 h1 {
-  font-size: 50px;
+  font-size: 25px;
 }
 h2 {
   font-size: 35px;
@@ -50,7 +50,10 @@ hr {
 .contact-nav {
   animation-delay: 2.5s;
 }
-
+.externalLinks {
+  font-size: 35px;
+  color: #c9c9c9;
+}
 
 .intro {
   margin-bottom: 100px;
@@ -200,7 +203,7 @@ hr {
 
 @media screen and (max-width: 640px)  { /* smartphones, Android phones, landscape iPhone */ 
   h1 {
-    font-size: 45px;
+    font-size: 20px;
   }
   h2 {
     font-size: 35px;
