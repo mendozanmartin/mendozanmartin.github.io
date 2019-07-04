@@ -9,8 +9,11 @@ h1 {
 h2 {
   font-size: 35px;
 }
+h3 {
+  font-size: 27px;
+}
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 hr {
   color: black;
@@ -52,7 +55,7 @@ hr {
 }
 .externalLinks {
   font-size: 35px;
-  color: #313177;
+  color: #4b4b6d;
 }
 
 .intro {
@@ -83,7 +86,7 @@ hr {
 }
 .drawingCanvas {
   width: inherit;
-  height: 550px;
+  height: 500px;
   background-color: #b3e4f7;
   border: solid;
   position: relative;
@@ -185,7 +188,30 @@ hr {
   border-bottom-width: 1px;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 1400px)  { /* smartphones, Android phones, landscape iPhone */ 
+
+.bigImage {
+  width: 80%;
+  margin-top: 30px;
+}
+.scrollingView::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.scrollingView::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.scrollingView::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.scrollingView::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .20);
+}
+
+
+@media screen and (max-width: 1400px)  { /* for smaller laptops like surface pro*/ 
   .navbar {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -250,6 +276,10 @@ hr {
   .prompt {
     margin: 0px;
     margin-top: 10px;
+  }
+  .bigImage {
+    width: 100%;
+    margin-top: 20px;
   }
 
 }

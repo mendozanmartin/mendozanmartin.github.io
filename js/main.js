@@ -47,6 +47,7 @@ function draw() {
 
 
 function gotBear(randomNumber) {
+    console.log(randomNumber)
     bear = bearDrawing[randomNumber];
 }
 function placeBear() {
@@ -67,7 +68,7 @@ function nextPage(project) {
     console.log(project)
     switch (project) {
         case "promptu":
-            // window.location.href = './promptu'
+            window.location.href = './promptu'
             break;
     }
 }
