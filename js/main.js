@@ -69,7 +69,7 @@ function nextPage(project) {
     console.log(project)
     switch (project) {
         case "promptu":
-            window.location.href = './promptu'
+            window.location.href = './projects/promptu'
             break;
     }
 }
