@@ -1,5 +1,7 @@
 const canvasWidth = document.getElementById("drawingCanvas").offsetWidth;
 const canvasHeight = document.getElementById("drawingCanvas").offsetHeight;
+const canvasTop = document.getElementById("drawingCanvas").offsetTop;
+const canvasLeft = document.getElementById("drawingCanvas").offsetLeft;
 const navbarHeight = document.getElementById("navbar").offsetHeight;
 const scale = 0.3;
 let strokeIndex = 0;
@@ -15,6 +17,7 @@ function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
     myCanvas.mouseClicked(placeBear);
+    drawSomething();
 }
 
 function draw() {
@@ -46,6 +49,28 @@ function draw() {
     }
 }
 
+function drawSomething() { //draw 5 animals to begin with
+    for (var count = 0; count < 10; count++) {
+        let randomNumber = parseInt((Math.random() * bearDrawing.length), 10);
+        let drawing = bearDrawing[randomNumber];
+        var j = 0;
+        var yPos = parseInt((Math.random() * canvasHeight + canvasTop - canvasTop/2), 10);
+        var xPos = parseInt((Math.random() * canvasHeight + canvasLeft - canvasLeft/2), 10);
+        for (let path of drawing) {
+            noFill();
+            stroke(255);
+            strokeWeight(3);
+            beginShape()
+            for (let i = 0; i < path[0].length; i++) {
+                let x = (path[0][i] * scale) + xPos
+                let y = (path[1][i] * scale) + yPos
+                vertex(x, y);
+            }
+            endShape();
+        }
+        j++;
+    }
+}
 
 function gotBear(randomNumber) {
     console.log(randomNumber)
@@ -78,7 +103,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $("#aboutPage").offset().top - navbarHeight
         }, 2000);
-  
+
     });
 });
 
