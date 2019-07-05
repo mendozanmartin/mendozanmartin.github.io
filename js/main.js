@@ -50,27 +50,28 @@ function draw() {
 }
 
 function drawSomething() { //draw 5 animals to begin with
-    for (var count = 0; count < 10; count++) {
-        let randomNumber = parseInt((Math.random() * bearDrawing.length), 10);
-        let drawing = bearDrawing[randomNumber];
-        var j = 0;
-        var yPos = parseInt((Math.random() * canvasHeight + canvasTop - canvasTop/2), 10);
-        var xPos = parseInt((Math.random() * canvasHeight + canvasLeft - canvasLeft/2), 10);
-        for (let path of drawing) {
+    var yPos = [canvasHeight/2, canvasHeight/3, canvasHeight/4, canvasHeight/5 + canvasHeight/2];
+    var xPos = [canvasWidth/4, canvasWidth/2 + canvasWidth/3, canvasWidth/3, canvasHeight/5 + canvasWidth/3];
+    var drawings = [bearDrawing[272], bearDrawing[167], bearDrawing[346], bearDrawing[277]];
+    var j = 0;
+    drawings.forEach(element => {
+        for (let path of element) {
             noFill();
             stroke(255);
             strokeWeight(3);
             beginShape()
             for (let i = 0; i < path[0].length; i++) {
-                let x = (path[0][i] * scale) + xPos
-                let y = (path[1][i] * scale) + yPos
+                let x = (path[0][i] * scale) + xPos[j]
+                let y = (path[1][i] * scale) + yPos[j]
                 vertex(x, y);
             }
             endShape();
         }
         j++;
+    }) 
+        
     }
-}
+
 
 function gotBear(randomNumber) {
     console.log(randomNumber)
