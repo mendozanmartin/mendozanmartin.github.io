@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id = "navbar">
         <div class="title navbar-brand">
             <h1>MARTIN <b>MENDOZA</b></h1>
           </div>        
@@ -30,9 +30,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active">ABOUT <span class="sr-only">(current)</span></a>
-            <a class="nav-link active">PORTFOLIO</a>
-            <a class="nav-link active">CONTACT</a>
+            <a class="nav-link active" id ="aboutLink">ABOUT <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" id = "portfolioLink">PORTFOLIO</a>
+            <a class="nav-link active" id="contactLink">CONTACT</a>
           </div>
         </div>
       </nav>
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-  <div class="aboutPage">
+  <div class="aboutPage" id = "aboutPage">
     <h2 class="text-center"><b>Hello, I'm Martin!</b></h2>
     <div class="row aboutContent">
       <div class="col-xl-2">
@@ -83,7 +83,7 @@
   </div>
 
 
-  <div class="projectsPage">
+  <div class="projectsPage" id = "portfolioPage">
     <h2 class="text-center mb-2"><b>My Projects (coming soon)</b></h2>
     <div class="row">
     <div class="container col-lg-4 col-sm-12" onclick="nextPage('promptu')">
@@ -146,7 +146,7 @@
     </div>
     <div class="d-flex justify-content-center" style="font-size: 40px;">
         <p class = "m-2">ABOUT</p>
-        <p class = "m-2">PORTFOLIO</p>
+        <p class = "m-2" >PORTFOLIO</p>
         <p class = "m-2">CONTACT</p>
       </div>
     <p class="m-3">This website is being hosted on Github Pages</p>

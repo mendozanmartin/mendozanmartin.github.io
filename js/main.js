@@ -1,5 +1,6 @@
 const canvasWidth = document.getElementById("drawingCanvas").offsetWidth;
 const canvasHeight = document.getElementById("drawingCanvas").offsetHeight;
+const navbarHeight = document.getElementById("navbar").offsetHeight;
 const scale = 0.3;
 let strokeIndex = 0;
 let index = 0;
@@ -72,4 +73,20 @@ function nextPage(project) {
             break;
     }
 }
+$(document).ready(function () {
+    $("#aboutLink").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#aboutPage").offset().top - navbarHeight
+        }, 2000);
+  
+    });
+});
+
+$(document).ready(function () {
+    $("#portfolioLink").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#portfolioPage").offset().top - navbarHeight
+        }, 2000);
+    });
+});
 
