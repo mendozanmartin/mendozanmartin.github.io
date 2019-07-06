@@ -52,7 +52,7 @@ hr {
 }
 .nav-link:hover {
   padding-bottom: 0px;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   width: fit-content;
   height: fit-content;
 }
