@@ -12,52 +12,45 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class = "animated delay-1s slow fadeIn">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
+<body class="animated delay-1s slow fadeIn">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id = "navbar">
-        <div class="title navbar-brand">
-            <h1>MARTIN <b>MENDOZA</b></h1>
-          </div>        
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" id ="aboutLink">ABOUT <span class="sr-only">(current)</span></a>
-            <a class="nav-link active" id = "portfolioLink">PORTFOLIO</a>
-            <a class="nav-link active" id="contactLink">CONTACT</a>
-          </div>
-        </div>
-      </nav>
-
-    <div class="landingPage">
-      <div class="row">
-        <div class="col-lg-8 col-xl-7 drawingCanvas col-sm-12" style = "cursor: pointer;" id="drawingCanvas">
-        <h4 style="color:white" class = "text-center prompt">Tap/click to fill the canvas with bears! (not 100% accurate)</h4>
-        </div>
-        <div class="col-lg-4 col-xl-5 col-sm-12 subLandingPage" style="text-align: left;">
-          <h3 id="introText" class = "m-0">driving creativity, innovation and <u>fun</u>ctionality into digital solutions.</h3>
-          <div class = "externalLinks">
-              <i class="fab fa-linkedin-in mr-3"></i>
-              <i class="fab fa-github mr-3"></i>
-              <i class="fab fa-vimeo-v mr-3"></i>
-              <i class="fas fa-envelope mr-3"></i>
-          </div>
-        </div>
-
-
-
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+    <div class="title navbar-brand">
+      <h1>MARTIN <b>MENDOZA</b></h1>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" id="aboutLink">ABOUT <span class="sr-only">(current)</span></a>
+        <a class="nav-link active" id="portfolioLink">PORTFOLIO</a>
+        <a class="nav-link active" id="contactLink">CONTACT</a>
       </div>
     </div>
+  </nav>
 
-  <div class="aboutPage" id = "aboutPage">
+  <div class="landingPage mb-5">
+    <div class="row">
+      <div class="col-lg-8 col-xl-7 drawingCanvas col-sm-12" style="cursor: pointer;" id="drawingCanvas">
+        <h4 style="color:white" class="text-center prompt">Tap/click to fill the canvas with bears! (not 100% accurate)
+        </h4>
+      </div>
+      <div class="col-lg-4 col-xl-5 col-sm-12 subLandingPage" style="text-align: left;">
+        <h3 id="introText" class="m-0">driving creativity, innovation and <u>fun</u>ctionality into digital solutions.
+        </h3>
+        <button class = "btn learnMore" id = "learnMore">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="aboutPage" id="aboutPage">
     <h2 class="text-center"><b>Hello, I'm Martin!</b></h2>
     <div class="row aboutContent">
       <div class="col-xl-2">
@@ -67,30 +60,36 @@
         <img src="./images/Martin.jpg" alt="Martin" class="MartinPhoto image-cropper">
       </div>
       <div class="col-xl-6 col-sm-12 aboutText">
-        <p><u><b>Quick Summary:</b></u> Experienced in web dev, augmented reality, virtual reality,
+        <p><u><b>Summary:</b></u> Experienced in web dev, augmented reality, virtual reality,
           Unity
           game dev and automation technology.</p>
-        <p><u><b>Longer Summary:</b></u>
-          What you absolutely need to know about me is that I love to learn. I am driven by the pursuit of knowledge and during my spare time, 
+        <p>
+          What you absolutely need to know about me is that I love to learn. I am driven by the pursuit of knowledge and
+          during my spare time,
           I enjoy reading and learning about various technologies.
         </p>
         <p>
           I am also an avid user of netflix and I enjoy singing + playing musical instruments.
-          If you would like to learn more about me, reach out to me or check out my LinkedIn, Youtube and/or Vimeo.
+          If you would like to learn more about me or study me, reach out to me through email or check out my LinkedIn, Github, and/or Vimeo.
+          <div class="externalLinks text-center">
+            <i class="fab fa-linkedin-in m-3" onclick = "externalLink('linkedIn')"></i>
+            <i class="fab fa-github m-3"onclick = "externalLink('github')"></i>
+            <i class="fab fa-vimeo-v m-3" onclick = "externalLink('vimeo')"></i>
+            <i class="fas fa-envelope m-3" onclick = "externalLink('email')"></i>
+          </div>
         </p>
       </div>
     </div>
   </div>
 
-
-  <div class="projectsPage" id = "portfolioPage">
-    <h2 class="text-center mb-2"><b>My Projects (coming soon)</b></h2>
+  <div class="projectsPage" id="portfolioPage">
+    <h2 class="text-center"><b>My Projects (coming soon)</b></h2>
     <div class="row">
-    <div class="container col-lg-4 col-sm-12" onclick="nextPage('promptu')">
-        <img src="./images/promptu.png" alt="Promptu" class="image" >
+      <div class="container col-lg-4 col-sm-12" onclick="nextPage('promptu')">
+        <img src="./images/promptu.png" alt="Promptu" class="image">
         <div class="middle">
           <div class="text">
-            <h3 class="projectTitle" >PROMPTU</h3>
+            <h3 class="projectTitle">PROMPTU</h3>
             <p>Social platform for raising awareness using AI and NLP</p>
           </div>
         </div>
@@ -106,14 +105,14 @@
         </div>
       </div>
       <div class="col-lg-4 container col-sm-12">
-          <img src="./images/worldrefugeeday.png" alt="World Refugee Day" class="image">
-          <div class="middle">
-            <div class="text">
-              <h3 class="projectTitle">WORLD REFUGEE DAY VR EXPERIENCE</h3>
-              <p>Virtual Reality Experience displayed at Toronto Union Station</p>
+        <img src="./images/worldrefugeeday.png" alt="World Refugee Day" class="image">
+        <div class="middle">
+          <div class="text">
+            <h3 class="projectTitle">WORLD REFUGEE DAY VR EXPERIENCE</h3>
+            <p>Virtual Reality Experience displayed at Toronto Union Station</p>
 
-            </div>
           </div>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -127,38 +126,42 @@
         </div>
       </div>
       <div class="container col-lg-4 col-sm-12">
-          <img src="./images/jackstones.png" alt="Jackstones" class="image">
-          <div class="middle">
-            <div class="text">
-              <h3 class="projectTitle">JACKSTONES</h3>
-              <p>Utilizing the Leap Motion controller to promote World Vision's Jackstones' documentary</p>
-            </div>
+        <img src="./images/jackstones.png" alt="Jackstones" class="image">
+        <div class="middle">
+          <div class="text">
+            <h3 class="projectTitle">JACKSTONES</h3>
+            <p>Utilizing the Leap Motion controller to promote World Vision's Jackstones' documentary</p>
           </div>
         </div>
+      </div>
       <div class="col-lg-4"></div>
 
     </div>
 
   </div>
+
+
+
+
   <footer class="footer">
     <div class="footerTitle">
       <h3>MARTIN <b>MENDOZA</b></h3>
     </div>
     <div class="d-flex justify-content-center" style="font-size: 40px;">
-        <p class = "m-2">ABOUT</p>
-        <p class = "m-2" >PORTFOLIO</p>
-        <p class = "m-2">CONTACT</p>
-      </div>
+      <p class="m-2 aboutLink">ABOUT</p>
+      <p class="m-2 portfolioLink">PORTFOLIO</p>
+      <p class="m-2 contactLink">CONTACT</p>
+    </div>
     <p class="m-3">This website is being hosted on Github Pages</p>
     <div class="d-flex justify-content-center mb-3" style="font-size: 35px;">
-      <i class="fab fa-linkedin-in m-3"></i>
-      <i class="fab fa-github m-3"></i>
-      <i class = "fab fa-vimeo-v m-3"></i>
-      <i class="fas fa-envelope m-3"></i>
+      <i class="fab fa-linkedin-in m-3" onclick = "externalLink('linkedIn')"></i>
+      <i class="fab fa-github m-3" onclick = "externalLink('github')"></i>
+      <i class="fab fa-vimeo-v m-3"></i>
+      <i class="fas fa-envelope m-3" onclick = "externalLink('email')"></i>
     </div>
   </footer>
- 
-  <script src = "./js/drawings.js" charset="utf-8"></script>
+
+  <script src="./js/drawings.js" charset="utf-8"></script>
   <script src="./js/main.js" charset="utf-8"></script>
 </body>
 

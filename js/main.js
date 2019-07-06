@@ -99,20 +99,35 @@ function nextPage(project) {
             break;
     }
 }
+
+function externalLink(website) {
+    switch(website) {
+        case "linkedIn":
+            window.location.href = "https://www.linkedin.com/in/neil-martin-mendoza/"
+            break;
+        case "github":
+            window.location.href = "https://github.com/mendozanmartin"
+            break;
+        case "email":
+            window.location.href = "mailto:mendozan@mcmaster.ca"
+        }
+    }
+
 $(document).ready(function () {
-    $("#aboutLink").click(function () {
+    $("#aboutLink, #learnMore, .aboutLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#aboutPage").offset().top - navbarHeight
         }, 2000);
 
     });
-});
 
-$(document).ready(function () {
-    $("#portfolioLink").click(function () {
+    $("#portfolioLink, .portfolioLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#portfolioPage").offset().top - navbarHeight
         }, 2000);
     });
+    
 });
+
+
 
