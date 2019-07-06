@@ -17,7 +17,7 @@ function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
     myCanvas.mouseClicked(placeBear);
-    drawSomething();
+   // drawSomething();
 }
 
 function draw() {
