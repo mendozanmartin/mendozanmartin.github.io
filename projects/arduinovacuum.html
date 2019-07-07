@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Martin Mendoza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="animated slow delay-1s fadeIn">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
+
+    <div class="row">
+        <div class="col-xl-3 col-lg-2">
+        </div>
+        <div class="col-xl-6 col-lg-8">
+            <h3 class="mt-5 mb-5" onclick="backHome()" style = "cursor: pointer"><b>
+                    <-</b> Go back</h3> 
+        <h2><b>Arduino Bluetooth Vacuum</b></h2>
+        <p>For my Supervisory Control and Data Acquisition course (SCADA), I was tasked with implementing a SCADA system 
+            using sensors, actuators and a human machine interface (HMI) to acquire data. 
+            The hard work of my partner and I resulted in a fully functional Bluetooth Arduino vacuum. 
+            The features of the bot include two modes of operation: automatic and manual. 
+            The HMI also includes fan monitoring, distance monitoring (by displaying a graph) + monitoring the 
+            number of obstacles encountered. </p>
+        <div style="width: inherit" class="text-center">
+            <img src="../images/bluetootharduino.png" alt="mockup" class="bigImage">
+        </div>
+        <h3 class="mt-3 mb-3"><b>Design Thinking</b></h3>
+        <p><b>Bluetooth vs. Wi-fi</b></p>
+                <p>The initial design of the vacuum included using the ESP8266 Wi-Fi module in place of the HC05 Bluetooth module. 
+                    After extensive research, we came to realize that using the Wi-Fi module would increase the risk of certain complications such as 
+                    network connectivity issues (network authentication and network reliability). As a result, we began to research alternatives of wireless connectivity, 
+                    and we arrived at the conclusion that Bluetooth Low Energy (BLE) would be the best alternative.
+                </p>
+        
+                <p><b>Benefits of BLE</b></p>
+                <ul>
+                    <li>There is no need to connect to a network and so we could deploy the bot anywhere without hassle.</li>
+                    <li>BLE is optimized for low power consumption by sending small amounts of data at low transfer speeds.</li>
+                    <li>The BLE capability exists on most smartphones and websites which is crucial for scalability (in case we want to make an app or website for the HMI)</li>
+                </ul>
+                <p><b>Hardware (Sensors and Actuators)</b></p>
+                <p><b>Below is a completed schematic of our Bluetooth Arduino Vacuum.</b></p>
+                <div style="width: inherit" class="text-center mb-5 mt-3">
+                        <img src="../images/bluetootharduino/schematics.png" alt="mockup" class="bigImage">
+                    </div>
+              
+
+   
+    
+        </div>
+    
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footerTitle">
+            <h3>MARTIN <b>MENDOZA</b></h3>
+        </div>
+        <div class="d-flex justify-content-center" style="font-size: 40px;">
+            <p class="m-2">ABOUT</p>
+            <p class="m-2">PORTFOLIO</p>
+            <p class="m-2">RESUME</p>
+        </div>
+        <p class="m-2">This website is being hosted on Github Pages.</p>
+        <div class="d-flex justify-content-center mb-3" style="font-size: 35px;">
+            <i class="fab fa-linkedin-in m-3"></i>
+            <i class="fab fa-github m-3"></i>
+            <i class="fab fa-vimeo-v m-3"></i>
+            <i class="fas fa-envelope m-3"></i>
+        </div>
+    </footer>
+
+    
+    <script src="../js/projects.js" charset="utf-8"></script>
+</body>
+
+</html>

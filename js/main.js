@@ -97,6 +97,8 @@ function nextPage(project) {
         case "promptu":
             window.location.href = './projects/promptu'
             break;
+        case "bluetootharduino":
+            window.location.href = './projects/arduinovacuum'
     }
 }
 
