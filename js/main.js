@@ -117,14 +117,14 @@ $(document).ready(function () {
     $("#aboutLink, #learnMore, .aboutLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#aboutPage").offset().top - navbarHeight
-        }, 1500);
+        }, 1750);
 
     });
 
     $("#portfolioLink, .portfolioLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#portfolioPage").offset().top - navbarHeight
-        }, 1500);
+        }, 1750);
     });
 
     $("#resumeLink, .resumeLink").click(function () {
