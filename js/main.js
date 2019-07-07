@@ -117,15 +117,21 @@ $(document).ready(function () {
     $("#aboutLink, #learnMore, .aboutLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#aboutPage").offset().top - navbarHeight
-        }, 2000);
+        }, 1500);
 
     });
 
     $("#portfolioLink, .portfolioLink").click(function () {
         $('html, body').animate({
             scrollTop: $("#portfolioPage").offset().top - navbarHeight
-        }, 2000);
+        }, 1500);
     });
+
+    $("#resumeLink, .resumeLink").click(function () {
+        window.open(
+            './Resume.pdf',
+            '_blank' // <- This is what makes it open in a new window.
+          );    });
     
 });
 
