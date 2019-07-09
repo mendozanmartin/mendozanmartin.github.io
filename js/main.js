@@ -17,7 +17,7 @@ function setup() {
     var myCanvas = createCanvas(canvasWidth, canvasHeight);
     myCanvas.parent("drawingCanvas");
     myCanvas.mouseClicked(placeBear);
-   // drawSomething();
+    // drawSomething();
 }
 
 function draw() {
@@ -50,8 +50,8 @@ function draw() {
 }
 
 function drawSomething() { //draw 5 animals to begin with
-    var yPos = [canvasHeight/2, canvasHeight/3, canvasHeight/4, canvasHeight/5 + canvasHeight/2];
-    var xPos = [canvasWidth/4, canvasWidth/2 + canvasWidth/3, canvasWidth/3, canvasHeight/5 + canvasWidth/3];
+    var yPos = [canvasHeight / 2, canvasHeight / 3, canvasHeight / 4, canvasHeight / 5 + canvasHeight / 2];
+    var xPos = [canvasWidth / 4, canvasWidth / 2 + canvasWidth / 3, canvasWidth / 3, canvasHeight / 5 + canvasWidth / 3];
     var drawings = [bearDrawing[272], bearDrawing[167], bearDrawing[346], bearDrawing[277]];
     var j = 0;
     drawings.forEach(element => {
@@ -68,9 +68,9 @@ function drawSomething() { //draw 5 animals to begin with
             endShape();
         }
         j++;
-    }) 
-        
-    }
+    })
+
+}
 
 
 function gotBear(randomNumber) {
@@ -103,17 +103,32 @@ function nextPage(project) {
 }
 
 function externalLink(website) {
-    switch(website) {
+    switch (website) {
         case "linkedIn":
-            window.location.href = "https://www.linkedin.com/in/neil-martin-mendoza/"
+            window.open(
+                'https://www.linkedin.com/in/neil-martin-mendoza/',
+                '_blank' // <- This is what makes it open in a new window.
+            );
             break;
         case "github":
-            window.location.href = "https://github.com/mendozanmartin"
+            window.open(
+                'https://github.com/mendozanmartin',
+                '_blank'
+            );
             break;
         case "email":
-            window.location.href = "mailto:mendozan@mcmaster.ca"
-        }
+            window.open(
+                'mailto:mendozan@mcmaster.ca',
+                '_blank'
+            );
+            break;
+        case "vimeo":
+            window.open(
+                'https://vimeo.com/user100529261',
+                '_blank'
+            );
     }
+}
 
 $(document).ready(function () {
     $("#aboutLink, #learnMore, .aboutLink").click(function () {
@@ -133,8 +148,9 @@ $(document).ready(function () {
         window.open(
             './Resume.pdf',
             '_blank' // <- This is what makes it open in a new window.
-          );    });
-    
+        );
+    });
+
 });
 
 

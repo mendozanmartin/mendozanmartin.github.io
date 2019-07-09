@@ -45,6 +45,7 @@ hr {
   height: fit-content;
 }
 .nav-link {
+  transition: .3s ease-in-out;
   margin-top: 1vw;
   margin-bottom: 1vw;
   font-weight: 700;
@@ -57,26 +58,27 @@ hr {
   height: fit-content;
 }
 
-.about-nav {
-  animation-delay: 1.5s;
-}
-
-
-.portfolio-nav {
-  animation-delay: 2s;
-}
-.contact-nav {
-  animation-delay: 2.5s;
-}
 .externalLinks {
   font-size: 40px;
   color: #4b4b6d;
 }
 .fab {
   cursor: pointer;
+  transition: .3s ease-in-out;
+
+}
+.fab:hover {
+  transform: scale(1.2);
+
 }
 .fas {
   cursor: pointer;
+  transition: .3s ease-in-out;
+
+}
+.fas:hover {
+  transform: scale(1.2);
+
 }
 
 .intro {
@@ -122,12 +124,16 @@ hr {
 }
 
 .learnMore {
+  transition: .5s ease;
   border-radius: 0px;
   font-weight: 700;
   margin-top: 1vh;
   border-style: solid;
   border-width: 4px;
   border-color: black;
+}
+.learnMore:hover {
+  transform: scale(1.1);
 }
 .btn:focus, .btn:active:focus, .btn.active:focus{
   outline:none;
