@@ -99,6 +99,9 @@ function nextPage(project) {
             break;
         case "bluetootharduino":
             window.location.href = './projects/arduinovacuum'
+            break;
+        case "refugeevrexperience":
+            window.location.href = './projects/refugeevrexperience'
     }
 }
 

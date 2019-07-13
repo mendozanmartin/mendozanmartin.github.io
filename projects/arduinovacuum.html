@@ -23,65 +23,142 @@
         <div class="col-xl-3 col-lg-2">
         </div>
         <div class="col-xl-6 col-lg-8">
-            <h3 class="mt-5 mb-5" onclick="backHome()" style = "cursor: pointer"><b>
-                    <-</b> Go back</h3> 
-        <h2><b>Arduino Bluetooth Vacuum</b></h2>
-        <p>For my Supervisory Control and Data Acquisition course (SCADA), I was tasked with implementing a SCADA system 
-            using sensors, actuators and a human machine interface (HMI) to acquire data. 
-            The hard work of my partner and I resulted in a fully functional Bluetooth Arduino vacuum. 
-            The features of the bot include two modes of operation: automatic and manual. 
-            The HMI also includes fan monitoring, distance monitoring (by displaying a graph) + monitoring the 
-            number of obstacles encountered. </p>
-        <div style="width: inherit" class="text-center">
-            <img src="../images/bluetootharduino.png" alt="mockup" class="bigImage">
-        </div>
-        <h3 class="mt-3 mb-3"><b>Design Thinking</b></h3>
-        <p><b>Bluetooth vs. Wi-fi</b></p>
-                <p>The initial design of the vacuum included using the ESP8266 Wi-Fi module in place of the HC05 Bluetooth module. 
-                    After extensive research, we came to realize that using the Wi-Fi module would increase the risk of certain complications such as 
-                    network connectivity issues (network authentication and network reliability). As a result, we began to research alternatives of wireless connectivity, 
-                    and we arrived at the conclusion that Bluetooth Low Energy (BLE) would be the best alternative.
-                </p>
-        
-                <p><b>Benefits of BLE</b></p>
-                <ul>
-                    <li>There is no need to connect to a network and so we could deploy the bot anywhere without hassle.</li>
-                    <li>BLE is optimized for low power consumption by sending small amounts of data at low transfer speeds.</li>
-                    <li>The BLE capability exists on most smartphones and websites which is crucial for scalability (in case we want to make an app or website for the HMI)</li>
-                </ul>
-                <p><b>Below is a completed schematic of our Bluetooth Arduino Vacuum.</b></p>
-                <div style="width: inherit" class="text-center mb-5 mt-3">
-                        <img src="../images/bluetootharduino/schematics.png" alt="mockup" class="bigImage">
-                    </div>
-                    <h3 class="mt-3 mb-3"><b>Software/Technologies used</b></h3>
-                    <ul>
-                        <li>Epoch.js, D3.js </li>
-                        <li>BluetoothTerminal.js </li>
-                        <li>Tachyons.css </li>
-                        <li>jQueryUI.js </li>
-                        <li>Firebase Hosting </li>
-                        <li>Arduino Uno Software</li>
-                    </ul>
-
-                    <h3 class="mt-3 mb-3"><b>Hardware/Materials used</b></h3>
-                    <ul>
-                        <li>Arduino Uno </li>
-                        <li>Electric Wires </li>
-                        <li>DC 12V Fan</li>
-                        <li>Anker Power Bank</li>
-                        <li>Ultrasonic Sensor</li>
-                        <li>Twin Industries Breadboard</li>
-                        <li>Tupperware</li>
-                        <li>DC Motor (4)</li>
-                        <li>HC05 Bluetooth Module</li>
-                            
-                    </ul>
-                    <h3 class="mt-3 mb-3"><b>View a live demo</b></h3>
-                    <div  class="video-container">
-                    <iframe class = "arduinoVideo" src="https://player.vimeo.com/video/346768608" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <h3 class="mt-5 mb-5" onclick="backHome()" style="cursor: pointer"><b>
+                    <-</b> Go back</h3> <h2><b>Arduino Bluetooth Vacuum</b></h2>
+                        <p>For my Supervisory Control and Data Acquisition course (SCADA), I was tasked with
+                            implementing a SCADA system
+                            using sensors, actuators and a human machine interface (HMI) to acquire data.
+                            The hard work of my partner and I resulted in a fully functional Bluetooth Arduino vacuum.
+                            The features of the bot include two modes of operation: automatic and manual.
+                            The HMI also includes fan monitoring, distance monitoring (by displaying a graph) +
+                            monitoring the
+                            number of obstacles encountered. </p>
+                        <div style="width: inherit" class="text-center">
+                            <img src="../images/bluetootharduino.png" alt="mockup" class="bigImage mt-0">
                         </div>
-                </div>
-    
+                        <h3 class="mt-3 mb-3"><b>Design Thinking</b></h3>
+                        <p><b>Bluetooth vs. Wi-fi</b></p>
+                        <p>The initial design of the vacuum included using the ESP8266 Wi-Fi module in place of the HC05
+                            Bluetooth module.
+                            After extensive research, we came to realize that using the Wi-Fi module would increase the
+                            risk of certain complications such as
+                            network connectivity issues (network authentication and network reliability). As a result,
+                            we began to research alternatives of wireless connectivity,
+                            and we arrived at the conclusion that Bluetooth Low Energy (BLE) would be the best
+                            alternative.
+                        </p>
+
+                        <p><b>Benefits of BLE</b></p>
+                        <ul>
+                            <li>There is no need to connect to a network and so we could deploy the bot anywhere without
+                                hassle.</li>
+                            <li>BLE is optimized for low power consumption by sending small amounts of data at low
+                                transfer speeds.</li>
+                            <li>The BLE capability exists on most smartphones and websites which is crucial for
+                                scalability (in case we want to make an app or website for the HMI)</li>
+                        </ul>
+                        <p><b>Communicating with the Arduino</b></p>
+                        <p>
+                            Receiving and sending information to the Arduino was made possible by the
+                            BluetoothTerminal.js library.
+                            The web client sends information as single characters which is accepted as commands for the
+                            Arduino
+                            (the character to command key can be found below).
+                        </p>
+                        <ul>
+                            <li>‘a’ – Move forward</li>
+                            <li>‘b’ – Move backward</li>
+                            <li>‘c’ – Turn right</li>
+                            <li>‘d’ – Turn left</li>
+                            <li>‘e’ – Stop moving (manual mode ON)</li>
+                            <li>‘f’ – Turn fan on</li>
+                            <li>‘g’ – Turn fan off</li>
+                            <li>‘p’ – Automatic mode ON</li>
+                        </ul>
+                        <p>
+                            The Arduino also sends information to the web client as a string which is then interpreted
+                            and displayed on the HMI for the user to understand.
+                        </p>
+                        <p>
+                            The format of the string can be found below:
+                        </p>
+                        <h2 class="text-center">
+                            A 9 9 9 O 5
+                        </h2>
+                        <ul>
+                            <li>First character
+                                <ul>
+                                    <li>
+                                        'A' - Automatic mode
+                                    </li>
+                                    <li>
+                                        'M' - Manual mode
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                Second, third and fourth characters
+                                <ul>
+                                        <li>
+                                                Distance in millimeters
+                                            </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Fifth character'
+                                <ul>
+                                    <li>
+                                        'I' Fan ON
+                                    </li>
+                                    <li>
+                                        'O' - Fan OFF
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                Sixth character onwards
+                                <ul>
+                                    <li>
+                                        Amount of obstacles encountered
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><b>Below is a completed schematic of our Bluetooth Arduino Vacuum.</b></p>
+                        <div style="width: inherit" class="text-center mb-5 mt-3">
+                            <img src="../images/bluetootharduino/schematics.png" alt="mockup" class="bigImage">
+                        </div>
+                        <h3 class="mt-3 mb-3"><b>Software/Technologies used</b></h3>
+                        <ul>
+                            <li>Epoch.js, D3.js </li>
+                            <li>BluetoothTerminal.js </li>
+                            <li>Tachyons.css </li>
+                            <li>jQueryUI.js </li>
+                            <li>Firebase Hosting </li>
+                            <li>Arduino Uno Software</li>
+                        </ul>
+
+                        <h3 class="mt-3 mb-3"><b>Hardware/Materials used</b></h3>
+                        <ul>
+                            <li>Arduino Uno </li>
+                            <li>Electric Wires </li>
+                            <li>DC 12V Fan</li>
+                            <li>Anker Power Bank</li>
+                            <li>Ultrasonic Sensor</li>
+                            <li>Twin Industries Breadboard</li>
+                            <li>Tupperware</li>
+                            <li>DC Motor (4)</li>
+                            <li>HC05 Bluetooth Module</li>
+
+                        </ul>
+                        <div class="video-container">
+                            <iframe class="arduinoVideo" src="https://player.vimeo.com/video/346768608" frameborder="0"
+                                allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+        </div>
+
     </div>
 
 
@@ -107,7 +184,7 @@
         </div>
     </footer>
 
-    
+
     <script src="../js/projects.js" charset="utf-8"></script>
 </body>
 
