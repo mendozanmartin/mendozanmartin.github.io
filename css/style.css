@@ -146,7 +146,7 @@ hr {
   margin-bottom: 10vh;
 }
 .aboutContent {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .aboutText {
@@ -348,6 +348,9 @@ hr {
     margin-right: 15px;  
   }
 
+  .aboutContent {
+    margin-top: 50px;
+  }
   .image {
     height: 210px;
   }
