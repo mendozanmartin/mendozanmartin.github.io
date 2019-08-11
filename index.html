@@ -15,6 +15,10 @@
 <body class="animated delay-1s slow fadeIn">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>
@@ -39,7 +43,8 @@
   <div class="landingPage mb-5">
 
     <div class="row">
-      <div id="carouselExampleIndicators" class="carousel slide  col-lg-8 col-xl-7 col-sm-12 shadow p-0" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide col-lg-8 col-xl-7 col-sm-12 shadow p-0"
+        data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -51,29 +56,32 @@
           <div class="carousel-item active">
             <img class="d-block w-100 slide-image" src="./images/promptu/Bus Stop MockUp.png" alt="First slide">
             <div class="carousel-caption">
-              <h3 class = "slide-title">Promptu</h3>
-              <p class = "caption-description">Social platform for raising awareness using AI and Natural Language Processing</p>
+              <h3 class="slide-title">Promptu</h3>
+              <p class="caption-description">Social platform for raising awareness using AI and Natural Language
+                Processing</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-image" src="./images/chineseradiothon.jpg" alt="First slide">
             <div class="carousel-caption ">
-              <h3 class = "slide-title">Chinese Radiothon Booth</h3>
-              <p class = "caption-description">Augmented Reality Experience for attracting potential donors into a retail booth</p>
+              <h3 class="slide-title">Chinese Radiothon Booth</h3>
+              <p class="caption-description">Augmented Reality Experience for attracting potential donors into a retail
+                booth</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-image" src="./images/jackstones.png" alt="First slide">
             <div class="carousel-caption ">
-              <h3 class = "slide-title">Jackstones</h3>
-              <p class = "caption-description">Utilizing the Leap Motion controller to promote World Vision's Jackstones' documentary</p>
+              <h3 class="slide-title">Jackstones</h3>
+              <p class="caption-description">Utilizing the Leap Motion controller to promote World Vision's Jackstones'
+                documentary</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-image" src="./images/bluetootharduino.png" alt="First slide">
             <div class="carousel-caption ">
-              <h3 class = "slide-title">Autonomous Arduino Vaccuum</h3>
-              <p class = "caption-description">Autonomous Roomba controlled via bluetooth web app</p>
+              <h3 class="slide-title">Autonomous Arduino Vaccuum</h3>
+              <p class="caption-description">Autonomous Roomba controlled via bluetooth web app</p>
             </div>
           </div>
 
@@ -89,8 +97,10 @@
         </a>
       </div>
 
-      <div class="col-lg-4 col-xl-5 col-sm-12 subLandingPage" style="text-align: left;">
-        <h3 id="introText" class="m-0 mt-3">driving creativity, innovation and <u>fun</u>ctionality into digital solutions.
+      <div class="col-lg-4 col-xl-5 col-sm-12 subLandingPage animated fadeInLeft delay-1s slow"
+        style="text-align: left;">
+        <h3 id="introText" class="m-0 mt-3">driving creativity, innovation and <u>fun</u>ctionality into digital
+          solutions.
         </h3>
         <button class="btn learnMore" id="learnMore">LEARN MORE</button>
       </div>
@@ -111,19 +121,24 @@
           Unity
           game dev and automation technology.</p>
         <p>
-          What you absolutely need to know about me is that I love to learn. I am driven by the pursuit of knowledge and
-          during my spare time,
-          I enjoy reading and learning about various technologies.
+          If there's anything you <u>need</u> to know about me, it's that I love to learn. I am driven by the pursuit of
+          knowledge and
+          I am easily fascinated (not even joking). I am also an avid Netflix user and I enjoy singing + playing musical
+          instruments.
         </p>
         <p>
-          I am also an avid Netflix user and I enjoy singing + playing musical instruments.
-          If you would like to learn more about me (or study me), reach out to me through email and be sure to check out
+
+          If you would like to learn more about me, reach out to me through email and be sure to check out
           my LinkedIn, Github, and Vimeo.
           <div class="externalLinks text-center">
-            <i class="fab fa-linkedin-in m-3" onclick="externalLink('linkedIn')"></i>
-            <i class="fab fa-github m-3" onclick="externalLink('github')"></i>
-            <i class="fab fa-vimeo-v m-3" onclick="externalLink('vimeo')"></i>
-            <i class="fas fa-envelope m-3" onclick="externalLink('email')"></i>
+            <i class="fab fa-linkedin-in m-3" onclick="externalLink('linkedIn')" data-toggle="tooltip"
+              data-placement="top" title="LinkedIn"></i>
+            <i class="fab fa-github m-3" onclick="externalLink('github')" data-toggle="tooltip"
+            data-placement="top" title="Github"></i>
+            <i class="fab fa-vimeo-v m-3" onclick="externalLink('vimeo')" data-toggle="tooltip"
+            data-placement="top" title="Vimeo"></i>
+            <i class="fas fa-envelope m-3" onclick="externalLink('email')" data-toggle="tooltip"
+            data-placement="top" title="Email"></i>
           </div>
         </p>
       </div>

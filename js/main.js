@@ -133,6 +133,10 @@ function externalLink(website) {
     }
 }
 
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 $(document).ready(function () {
     $("#aboutLink, #learnMore, .aboutLink").click(function () {
         $('html, body').animate({
