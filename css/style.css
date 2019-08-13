@@ -27,6 +27,7 @@ hr {
 }
 .row {
   margin: 0px;
+  padding:0px;
 }
 .navbar {
   margin-left: 10vw;
