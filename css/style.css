@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
   background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  overflow-x:hidden;
 }
 h1 {
   font-size: 25px;
