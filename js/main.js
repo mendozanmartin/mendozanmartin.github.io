@@ -78,13 +78,13 @@ $(document).ready(function () {
 
  
   $('#first-row').waypoint(function() {
-      $('#first-row').addClass('fadeInUp slow');
+      $('#first-row').addClass('fadeInUp');
   }, { offset: '65%' });
   $('#second-row').waypoint(function() {
-    $('#second-row').addClass('fadeInUp slow');
+    $('#second-row').addClass('fadeInUp');
 }, { offset: '65%' });
 $('#third-row').waypoint(function() {
-    $('#third-row').addClass('fadeInUp slow');
+    $('#third-row').addClass('fadeInUp');
 }, { offset: '65%' });
 });
 
