@@ -75,6 +75,11 @@ $(document).ready(function () {
   $('#first-row').css('opacity', 0);
   $('#second-row').css('opacity', 0);
   $('#third-row').css('opacity', 0);
+  $('#aboutText').css('opacity', 0);
+  $('#aboutImage').css('opacity', 0);
+//   $('#aboutTitle').css('opacity', 0);
+  $('#projectTitle').css('opacity', 0);
+
 
  
   $('#first-row').waypoint(function() {
@@ -86,6 +91,20 @@ $(document).ready(function () {
 $('#third-row').waypoint(function() {
     $('#third-row').addClass('fadeInUp');
 }, { offset: '65%' });
+$('#aboutImage').waypoint(function() {
+    $('#aboutImage').addClass('fadeIn');
+}, { offset: '65%' });
+$('#aboutText').waypoint(function() {
+    $('#aboutText').addClass('fadeInRight');
+}, { offset: '65%' });
+
+$('#projectTitle').waypoint(function() {
+    $('#projectTitle').addClass('fadeIn');
+}, { offset: '65%' });
+
+// $('#aboutTitle').waypoint(function() {
+//     $('#aboutTitle').addClass('fadeIn');
+// }, { offset: '65%' });
 });
 
 
