@@ -34,13 +34,13 @@ hr {
   padding:0px;
 }
 .navbar {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 1vh;
   color: black;
   padding-left: 0px;
   padding-right: 0px;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.9);
 }
 .title {
   border: 4px solid;
@@ -147,10 +147,10 @@ hr {
 }
 
 .aboutPage {
-  margin-top: 10vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 10vh;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vh;
 }
 .aboutContent {
   margin-top: 25px;
@@ -298,8 +298,8 @@ hr {
 
 @media screen and (max-width: 1400px)  { /* for smaller laptops like surface pro*/ 
   .navbar {
-    margin-left: 5vw;
-    margin-right: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .landingPage {
     margin-left: 5vw;
@@ -335,10 +335,10 @@ hr {
     margin-top: 20px;
   }
   .aboutPage {
-    margin-top: 3vh;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 5vh;
+    padding-top: 3vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5vh;
   }
   .MartinPhoto {
     margin-top: -30px;
@@ -354,8 +354,8 @@ hr {
     padding-top: 10px;
   }
   .navbar {
-    margin-left: 15px;
-    margin-right: 15px;  
+    padding-left: 15px;
+    padding-right: 15px;  
   }
 
   .aboutContent {
