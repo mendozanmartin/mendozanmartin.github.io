@@ -285,7 +285,7 @@ hr {
 }
 
 .scrollingView::-webkit-scrollbar:horizontal {
-  height: 11px;
+  height: 20px;
 }
 
 .scrollingView::-webkit-scrollbar-thumb {
