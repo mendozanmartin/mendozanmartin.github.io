@@ -12,6 +12,9 @@ function nextPage(project) {
             break;
         case "refugeevrexperience":
             window.location.href = './projects/refugeevrexperience'
+            break;
+        case "challengeforchange":
+            window.location.href = './projects/challengeforchange'
     }
 }
 
