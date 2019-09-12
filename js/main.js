@@ -15,6 +15,16 @@ function nextPage(project) {
             break;
         case "challengeforchange":
             window.location.href = './projects/challengeforchange'
+            break;
+        case "jackstones":
+            window.location.href = './projects/jackstones'
+            break;
+        case "radiothonbooth":
+            window.location.href = './projects/radiothonbooth'
+            break;
+        case "snapchatlenses":
+            window.location.href = './projects/snapchatlenses'
+            break;
     }
 }
 
