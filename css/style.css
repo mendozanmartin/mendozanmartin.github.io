@@ -377,8 +377,8 @@ hr {
   }
   .aboutPage {
     padding-top: 3vh;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding-bottom: 5vh;
   }
   .MartinPhoto {
