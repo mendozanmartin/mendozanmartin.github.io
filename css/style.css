@@ -306,6 +306,25 @@ hr {
   height: 100%;
 }
 
+@media screen and (min-width: 1800px)  { /* for smaller laptops like surface pro*/ 
+  .navbar {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .landingPage {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  .projectsPage {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  .resumePage {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}
 
 @media screen and (max-width: 1400px)  { /* for smaller laptops like surface pro*/ 
   .navbar {
