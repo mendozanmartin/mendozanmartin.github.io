@@ -152,10 +152,10 @@ hr {
 }
 
 .aboutPage {
-  padding-top: 10vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-bottom: 10vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
 }
 .aboutContent {
   margin-top: 25px;
@@ -324,6 +324,12 @@ hr {
     margin-left: 15vw;
     margin-right: 15vw;
   }
+  .aboutPage {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  
 }
 
 @media screen and (max-width: 1400px)  { /* for smaller laptops like surface pro*/ 
