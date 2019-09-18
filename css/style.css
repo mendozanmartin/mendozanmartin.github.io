@@ -7,6 +7,9 @@ body {
   margin: 0px;
   overflow-x:hidden;
 }
+b {
+  font-weight: 700;
+}
 h1 {
   font-size: 25px;
 }
@@ -440,9 +443,5 @@ hr {
 
 
 }
-.random {
-  
-}
-
 
 
