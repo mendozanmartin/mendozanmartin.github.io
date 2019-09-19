@@ -32,7 +32,7 @@ function externalLink(website) {
     switch (website) {
         case "linkedIn":
             window.open(
-                'https://www.linkedin.com/in/neil-martin-mendoza/',
+                'https://www.linkedin.com/in/martin-mendoza/',
                 '_blank' // <- This is what makes it open in a new window.
             );
             break;
