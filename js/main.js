@@ -25,6 +25,9 @@ function nextPage(project) {
         case "snapchatlenses":
             window.location.href = './projects/snapchatlenses'
             break;
+        case "ordrup":
+            window.location.href = './projects/ordrup'
+            break;
     }
 }
 
