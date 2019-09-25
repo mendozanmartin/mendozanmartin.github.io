@@ -53,6 +53,7 @@ hr {
   font-weight: 600;
   cursor: pointer;
 }
+
 .nav-link:hover {
   padding-bottom: 0px;
   border-bottom: 3px solid black;
