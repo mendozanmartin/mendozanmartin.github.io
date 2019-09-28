@@ -5,28 +5,36 @@ function nextPage(project) {
     console.log(project)
     switch (project) {
         case "promptu":
-            window.location.href = './projects/promptu'
+            window.open('./projects/promptu',
+            '_blank')
             break;
         case "bluetootharduino":
-            window.location.href = './projects/arduinovacuum'
+            window.open('./projects/arduinovacuum',
+            '_blank')
             break;
         case "refugeevrexperience":
-            window.location.href = './projects/refugeevrexperience'
+            window.open('./projects/refugeevrexperience',
+            '_blank')
             break;
         case "challengeforchange":
-            window.location.href = './projects/challengeforchange'
+            window.open('./projects/challengeforchange',
+            '_blank')
             break;
         case "jackstones":
-            window.location.href = './projects/jackstones'
+            window.open('./projects/jackstones',
+            '_blank')
             break;
         case "radiothonbooth":
-            window.location.href = './projects/radiothonbooth'
+            window.open('./projects/radiothonbooth',
+            '_blank')
             break;
         case "snapchatlenses":
-            window.location.href = './projects/snapchatlenses'
+            window.open('./projects/snapchatlenses',
+            '_blank')
             break;
         case "ordrup":
-            window.location.href = './projects/ordrup'
+            window.open('./projects/ordrup',
+            '_blank')
             break;
     }
 }
